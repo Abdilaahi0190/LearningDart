@@ -34,7 +34,13 @@ void main(){
 // std.Name = "Harry";
 // print("Studenst's Name is ${std.Name}");
 
+  var phones = SmartPhone();
+    phones.brand="Samsung";
+    phones.model="A13";
+    phones.cameraResolution = '100mp';
 
+    print("Name: ${phones.brand} \nBrand:${phones.model}  \nrecamera Resolution "
+        "${phones.cameraResolution}");
 
 }
 //
@@ -111,7 +117,17 @@ void main(){
     //   }
     //
     // }
+class Phone{
 
+  String? brand;
+  String? model;
+  int? price;
+
+
+}
+class SmartPhone extends Phone{
+   String? cameraResolution;
+}
 
 
 
